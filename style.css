@@ -111,16 +111,7 @@ header{
     justify-content: space-around;
     color: white; 
 }
-.popup-overlay {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0; top: 0;
-    width: 100vw; height: 100vh;
-    background: rgba(0,0,0,0.5);
-    justify-content: center;
-    align-items: center;
-}
+
 .nbtn{
     background-color: #5bd0f1;
     color: #e0ebe6;
@@ -133,6 +124,16 @@ header{
 }
 
 /* Rgister popup */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
 .popup-content {
     background: #fff;
     padding: 2rem;
@@ -170,6 +171,38 @@ header{
 .popup-content button:hover {
     background: #5d5353;
 }
+/* login section */
+.login-form{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    height: auto;
+    width: 30%;
+    padding: 1rem;
+    border-radius: 10px;
+     position: relative;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+    background: #5d5353;
+}
+.forgetp{
+    margin-left: 48%;
+    text-decoration: none;
+}
+.form-label{
+    color: #e28966;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+
+}
+/* login ends */
 /* main section */
 .info{
     display: flex;
