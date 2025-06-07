@@ -1,0 +1,247 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url('./img;icon/danil-aksenov-BDWx6OSCYrk-unsplash.jpg') no-repeat center center fixed;
+    /* background: url("https://random-image-pepebigotes.vercel.app/api/random-image"); */
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.main{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+header{
+    flex: 25%;
+}
+.mynav{
+    display: flex;
+    align-items: center;
+    background-color:  #5d5353; 
+    margin: 1vh;
+    padding: 12px 0px; 
+    flex-direction: column;
+}
+/* Website logo in the navigation bar */
+.navLogo{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px
+}
+.navbutton{
+    background-color: #5d5353;
+    color:#e0ebe6;
+    border: none;
+    cursor: pointer;
+    font-style: italic;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navigation bar list items */
+.listA{
+    padding: 0.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.ddbutton,.ddbutton2,.ddbutton3,.ddbutton4{
+    background-color: #5d5353;
+    color:black;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.ddlist,.ddlist2,.ddlist3,.ddlist4{
+    display: none;
+    position: absolute;
+    background-color: #f9eaea;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.ddlist a,.ddlist2 a,.ddlist3 a,.ddlist4 a{
+    color: rgb(80, 62, 62);
+    padding: 12px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: block;
+    margin: 2px;
+}
+.ddlist a:hover,.ddlist2 a:hover,.ddlist3 a:hover,.ddlist4 a:hover{
+    background-color: #947878;
+    border-radius: 16px;
+    transition: 0.1s steps(100);
+    background-color: transparent 50%;
+}
+.dropdown:hover .ddlist,.dropdown:hover .ddlist2,.dropdown:hover .ddlist3,.dropdown:hover .ddlist4{
+    display: block;
+    left: 100%;
+    top: 0;
+    transition: 400ms ease-in;
+}
+
+/* Navigation bar buttons */
+.navButton{
+    padding: 0.5rem;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white; 
+}
+.popup-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+.nbtn{
+    background-color: #5bd0f1;
+    color: #e0ebe6;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 16px;
+    transition: background 0.3s ease;
+}
+
+/* Rgister popup */
+.popup-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+}
+.close-btn {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #947878;
+}
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.popup-content input, .popup-content button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.popup-content button {
+    background: #947878;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.popup-content button:hover {
+    background: #5d5353;
+}
+/* main section */
+.info{
+    display: flex;
+}
+.left{
+   border-bottom:5px solid #0e1213;
+   margin: 1vh;
+   flex: 30%;
+   background: url('./joanna-kosinska-1_CMoFsPfso-unsplash.jpg') no-repeat fixed;
+   background-size: cover;
+}
+.skill img{
+    height: 7vh ;
+    width: 8vh;
+    margin-right: 1vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.skill img:hover{
+    box-shadow: 0px 0px 5px 3px rgb(59, 57, 45);
+    padding: 2px;
+    transform: scale(1.2);
+    transition: ease-out 0.5s step-start;
+}
+.footer-content p{
+    color: #e0ebe6;
+    font: 24px bold italic 'Times New Roman', Times, serif;
+    text-align: center;
+    background: #000;
+    padding: 10px 0;
+    opacity: 0.8;
+}
+
+/* Responsive media queries */
+@media(max-width: 410px){
+    .main{
+        align-items: center;    
+        flex-direction: column; 
+    }
+    .mynav{
+        width: 95vw;
+    }
+    .listA{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navButton{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .navLogo h1{
+        width: 100%;
+        position: relative;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ddlist,.ddlist2,.ddlist3,.ddlist4{
+        padding-left: 50px;
+        position: absolute;
+        left: 80%;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .dropdown:hover .ddlist,.dropdown:hover .ddlist2,.dropdown:hover .ddlist3,.dropdown:hover .ddlist4{
+    left: 80%;
+    top: 0;
+    background-color: #f9eaea;
+    padding: 1vh;
+    transition: 400ms ease-in;
+}
+}

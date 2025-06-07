@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* ...existing code... */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #5d5353;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5d5353;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* ...existing code... */
+</style>
+<body class="h2">
+    <!-- ...existing code... -->
+<ul class="listA" style="display: block;">
+    <li class="dropdown">
+        <button class="dropbtn">Home</button>
+        <div class="dropdown-content">
+            <a href="#">C Language</a>
+            <a href="#">C++ Language</a>
+            <a href="#">Java Language</a>
+            <a href="#">Python Language</a>
+            <a href="#">JavaScript Language</a>
+            <a href="#">HTML Language</a>
+            <a href="#">CSS Language</a>
+        </div>
+    </li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>Services</li>
+</ul>
+<p class="h1" style="cursor: pointer;">btn1</p>
+<!-- ...existing code... -->
+
+<input type="password" placeholder="Password" id="name">
+<span id="cd" style="cursor:pointer;">&#128065;</span>
+
+</body>
+<script>
+    // Fix: Wait for DOMContentLoaded to ensure elements exist
+    document.addEventListener('DOMContentLoaded', function() {
+        const a3 = document.querySelector('.h1');
+        const db3 = document.querySelector('.h2');
+        a3.addEventListener('click', () => {
+            a3.style.color = 'red';
+            db3.style.background = 'black';
+            console.log("object");
+        });
+
+        const a1 = document.querySelector("#name");
+        const clickme = document.querySelector("#cd");
+        clickme.addEventListener('click', () => {
+            a1.type = a1.type === 'password' ? 'text' : 'password';
+        });
+    });
+</script>
+</html>

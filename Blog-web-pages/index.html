@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--dark maode-->
+    <input type="checkbox" id="dark-toggle" class="dark-toggle">
+    <label for="dark-toggle" class="dark-mode-label">
+        <span class="dark-mode-icon">🌙</span>
+        <span class="light-mode-icon">☀️</span>
+    </label>
+    <header class="header">
+        <h1>My Blog - PAGE 1</h1>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Posts</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="posts">
+            <article class="post">
+                <h1>Post title - 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sequi labore iusto, consectetur quisquam in, quis sint totam corrupti exercitationem sed neque ad. Quas doloremque beatae ratione neque, pariatur nemo.</p>
+            </article>
+            <article class="post">
+                 <h1>Post title - 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sequi labore iusto, consectetur quisquam in, quis sint totam corrupti exercitationem sed neque ad. Quas doloremque beatae ratione neque, pariatur nemo.</p>
+            </article>
+            <article class="post">
+                  <h1>Post title - 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sequi labore iusto, consectetur quisquam in, quis sint totam corrupti exercitationem sed neque ad. Quas doloremque beatae ratione neque, pariatur nemo.</p>
+            </article>
+        
+            <!--Paginatin-->
+            <div class="pagination">
+                <a href="index.html" class="active">1</a>
+                <a href="page2.html">2</a>
+                <a href="page3.html">3</a>
+            </div>
+        </section>
+        <aside class="sidebar">
+            <h3>About me</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum laboriosam sint minima delectus quo non deserunt omnis nam possimus molestias fugit laborum esse tempore, ipsam in, sed iste. Sequi, dignissimos.</p>
+            <h3>Category</h3>
+            <ul>
+                <li>Fullstack</li>
+                <li>Web Development</li>
+                <li>Testing</li>
+                <li>Development</li>
+            </ul>
+        </aside>
+    </main>
+
+    <!--Contact form-->
+    <section class="contact-form" id="contact">
+        <h2>Contact me</h2>
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <textarea name="message" id="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Hisec.Co</p>
+    </footer>
+</body>
+</html>
