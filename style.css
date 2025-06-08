@@ -16,20 +16,24 @@ body{
   'GRAD' 0,
   'opsz' 24
 }
+
 .main{
     display: flex;
+    gap: 1vh;
     height: auto;
+    background-color: #e28966;
     width: 100%;
 }
 header{
     flex: 25%;
+    background-color: #947878;
 }
 .mynav{
     display: flex;
     align-items: center;
     background-color:  #5d5353; 
     margin: 1vh;
-    padding: 12px 0px; 
+    padding: 17px 0px; 
     flex-direction: column;
 }
 /* Website logo in the navigation bar */
